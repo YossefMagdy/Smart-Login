@@ -10,13 +10,10 @@ function goback(){
 }
 
 function gotophoto(){
-    window.open("photos.html","_self")
+    window.open("Photos.html","_self")
 }
 function gotoBookmark(){
     window.open("Bookmarker.html","_self")
 }
 
 //------------------------------------------------------------------
-
-
-// "<h2>Welcome "+Admin+"</h2>"
