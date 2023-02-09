@@ -1,0 +1,32 @@
+body{
+    background-color: #24353F;
+}
+.navbar{
+    box-shadow: 0 0 22px 3px #000000c7;
+}
+
+.navbar button{
+    border: 1px solid orange;
+}
+
+header .container .welcome{
+    box-shadow: 0 0 22px 3px #000000c7;
+    color: #17a2b8;
+    width: 50%;
+}
+@media screen and (max-width:979px) and (min-width:768px){
+    header .container .welcome{
+        width: 80%;
+    }
+}
+}
+@media screen and (max-width:767px) and (min-width:500px){
+    header .container .welcome{
+        width: 80%;
+    }
+}
+@media screen and (max-width:499px) {
+    header .container .welcome{
+        width: 80%;
+    }
+}

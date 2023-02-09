@@ -1,0 +1,45 @@
+body{
+    background-color: #24353F;
+}
+.login-box{
+    box-shadow: 0 0 22px 3px #000000c7;
+}
+.login-box h2{
+    color: #17a2b8;
+}
+.login-box button{
+    background-color: transparent !important;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.login-box button:hover{
+    background-color: #17a2b8 !important;
+}
+.login-box input:focus{
+    box-shadow: none;
+    color: white;
+}
+.login-box input::placeholder{
+    color: rgba(255, 255, 255, 0.588);
+}
+.login-box p a{
+    text-decoration: none;
+}
+.login-box p a:hover{
+    text-decoration: underline;
+}
+form .input-Erorr{
+    display: none;
+}
+form .Empty-input{
+    display: none;
+}
+form .EmailRE{
+    display: none;
+}
+form .passRE{
+    display: none;
+}

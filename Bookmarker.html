@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="back-btn">
+            <button class="btn btn-primary">Back</button>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h1 class="">Bookmark</h1>
+        <hr>
+    </div>
+    <div class="container text-center p-5 bg-secondary">
+        <h2 class="mb-4">Bookmark your favorite sites</h2>
+        <form action="">
+            <div>
+                <label for="siteName" class="mb-3">Site Name</label>
+            <input type="text" id="siteName" class="form-control w-75 m-auto mb-3" placeholder="Bookmark Name">
+            </div>
+            <div>
+                <label for="siteUrl" class="mb-3">Site URL</label>
+            <input type="text" id="siteUrl" class="form-control w-75 m-auto mb-3" placeholder="website URL">
+            </div>
+            <button type="button" id="submit" class="btn btn-primary btn-lg" onclick="addBookmark()">Submit</button>
+            <button type="button" id="edit" style="display: none;" class="btn btn-primary btn-lg">Edit</button>
+        </form>
+    </div>
+    <div class="container mt-5">
+            <table class="table table-bordered text-center table-striped ">
+                <thead>
+                    <tr>
+                        <th>Site Name</th>
+                        <th>Site Url</th>
+                        <th>Visit</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                    <tr>
+                        <td></td>
+                        <td><a href="" target="_blank" class="text-decoration-none"></a></td>
+                        <td><button class="btn btn-warning">Visit</button></td>
+                        <td><button class="btn btn-warning">update</button></td>
+                        <td><button class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <script src="js/Bookmarker.js"></script>
+</body>
+</html>
+

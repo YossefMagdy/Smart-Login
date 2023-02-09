@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="Css/Stylesheet.css">
+</head>
+<body>
+    <div class="container py-5 d-flex justify-content-center   align-items-center">
+        <div class="login-box p-5 w-75 text-center rounded-3 ">
+            <h2 class="fs-1">Smart Login System</h2>
+            <form action="">
+                <input type="text" placeholder="Enter your Name" class="form-control text-white mt-4  bg-transparent" id="userName">
+                <input type="text" placeholder="Enter your Email" class="form-control mt-4 text-white bg-transparent" id="userEmail">
+                <p class="text-danger EmailRE">Wrong Email</p>
+                <input type="password" placeholder="Enter your password" class="form-control text-white mt-3 bg-transparent" id="userPass">
+                <p class="text-danger passRE">Password size  must be From (5 to 15)</p>
+                <button type="button" onclick="addUser()" class="mt-4 btn btn-primary w-100">Sign Up</button>
+            </form>
+            <p class="text-white fs-5">Have an account? <a href="index.html" id="Signin" class=" text-white fs-4">Sign in</a></p>
+        </div>
+    </div>
+
+    <script src="js/Signup.js"></script>
+</body>
+</html>
