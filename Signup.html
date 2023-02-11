@@ -14,10 +14,20 @@
             <h2 class="fs-1">Smart Login System</h2>
             <form action="">
                 <input type="text" placeholder="Enter your Name" class="form-control text-white mt-4  bg-transparent" id="userName">
+                <div id="NameAlert" class="alert alert-danger d-none">
+                    <p>Enter first name</p>
+                </div>
                 <input type="text" placeholder="Enter your Email" class="form-control mt-4 text-white bg-transparent" id="userEmail">
-                <p class="text-danger EmailRE">Wrong Email</p>
+                <div id="EmailAlert" class="alert alert-danger d-none">
+                    <p>Email Not Valid</p>
+                </div>
+                <div id="SameEmail" class="alert alert-danger d-none">
+                    <p>This Email Is Take,Try Another</p>
+                </div>
                 <input type="password" placeholder="Enter your password" class="form-control text-white mt-3 bg-transparent" id="userPass">
-                <p class="text-danger passRE">Password size  must be From (5 to 15)</p>
+                <div id="passAlert" class="alert alert-danger d-none">
+                    <p>Use 8 or more characters with a mix of letters, numbers & symbols</p>
+                </div>
                 <button type="button" onclick="addUser()" class="mt-4 btn btn-primary w-100">Sign Up</button>
             </form>
             <p class="text-white fs-5">Have an account? <a href="index.html" id="Signin" class=" text-white fs-4">Sign in</a></p>

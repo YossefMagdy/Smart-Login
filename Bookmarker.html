@@ -23,11 +23,20 @@
             <div>
                 <label for="siteName" class="mb-3">Site Name</label>
             <input type="text" id="siteName" class="form-control w-75 m-auto mb-3" placeholder="Bookmark Name">
+            <div id="Alert_name" class="alert alert-danger justify-content-center d-none text-center">
+                <p>Name Not Valid</p>
+            </div>  
             </div>
             <div>
                 <label for="siteUrl" class="mb-3">Site URL</label>
             <input type="text" id="siteUrl" class="form-control w-75 m-auto mb-3" placeholder="website URL">
-            </div>
+            <div id="Alert_Url" class="alert alert-danger justify-content-center d-none text-center">
+                <p>Url Not Valid</p>
+            </div>  
+            <div id="D_email" class="alert alert-danger justify-content-center d-none text-center">
+                <p>Duplicate URL</p>
+            </div>  
+        </div>
             <button type="button" id="submit" class="btn btn-primary btn-lg" onclick="addBookmark()">Submit</button>
             <button type="button" id="edit" style="display: none;" class="btn btn-primary btn-lg">Edit</button>
         </form>

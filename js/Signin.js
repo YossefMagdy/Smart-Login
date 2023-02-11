@@ -10,9 +10,9 @@ else{
 
 
 function CheckInput(){
-    if(userEmail.value=="" && userPass.value==""){
-        document.querySelector(".Empty-input").style.display="inline-block";
-        document.querySelector(".input-Erorr").style.display="none";
+    if(userEmail.value=="" || userPass.value==""){
+        document.getElementById("Alert-empty").classList.replace("d-none","d-block");
+        document.getElementById("Alert-wrong").classList.replace("d-block","d-none");;
     }
     else{
         var user;
@@ -25,14 +25,14 @@ function CheckInput(){
             break;
         }
         else{
-            document.querySelector(".Empty-input").style.display="none";
-            document.querySelector(".input-Erorr").style.display="inline-block";
+            document.getElementById("Alert-empty").classList.replace("d-block","d-none");
+            document.getElementById("Alert-wrong").classList.replace("d-none","d-block");;
             continue;
         }
   }
     }
     else{
-        document.querySelector(".input-Erorr").style.display="inline-block";
+        document.getElementById("Alert-wrong").classList.replace("d-none","d-block");
     }
     }
 }

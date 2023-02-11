@@ -31,15 +31,3 @@ body{
 .login-box p a:hover{
     text-decoration: underline;
 }
-form .input-Erorr{
-    display: none;
-}
-form .Empty-input{
-    display: none;
-}
-form .EmailRE{
-    display: none;
-}
-form .passRE{
-    display: none;
-}
