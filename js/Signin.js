@@ -18,7 +18,7 @@ function CheckInput(){
         var user;
   if(userlist.length>0){
     for(var i=0;i<userlist.length;i++){
-        if(userlist[i].Email.includes(userEmail.value) && userlist[i].pass.includes(userPass.value)){
+        if(userlist[i].Email.toLowerCase()==userEmail.value.toLowerCase() && userlist[i].pass.toLowerCase()==userPass.value.toLowerCase()){
             window.open("Home.html","_self")
             user=userlist[i].name;
             localStorage.setItem("Username",JSON.stringify(user))
