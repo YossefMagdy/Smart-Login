@@ -1,6 +1,7 @@
 var userEmail=document.getElementById("userEmail");
 var userPass=document.getElementById("userPass");
 var userlist=[];
+var Found=true;
 if(localStorage.getItem("list")==null){
     userlist=[];
 }
@@ -10,6 +11,7 @@ else{
 
 
 function CheckInput(){
+    
     if(userEmail.value=="" || userPass.value==""){
         document.getElementById("Alert-empty").classList.replace("d-none","d-block");
         document.getElementById("Alert-wrong").classList.replace("d-block","d-none");;
@@ -22,16 +24,26 @@ function CheckInput(){
             window.open("Home.html","_self")
             user=userlist[i].name;
             localStorage.setItem("Username",JSON.stringify(user));
+            Found=true;
+            break;
         }
         else{
-            document.getElementById("Alert-empty").classList.replace("d-block","d-none");
-            document.getElementById("Alert-wrong").classList.replace("d-none","d-block");
+            Found=false;
             continue;
         }
   }
+  afterforloop();
     }
     else{
         document.getElementById("Alert-wrong").classList.replace("d-none","d-block");
     }
+    }
+}
+
+
+function afterforloop(){
+    if(Found==false){
+        document.getElementById("Alert-empty").classList.replace("d-block","d-none");
+        document.getElementById("Alert-wrong").classList.replace("d-none","d-block");
     }
 }
