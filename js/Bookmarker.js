@@ -46,9 +46,12 @@ siteUrl.addEventListener("blur",DuplicateUrl)
 
 function DuplicateUrl(){
     for(var i=0;i<bookmark.length;i++){
-        if(bookmark[i].url==siteUrl.value){
+        if(bookmark[i].url.toLowerCase()==siteUrl.value.toLowerCase()){
             D_email.classList.replace("d-none","d-flex")
-            return true;
+            return true
+        }
+        else{
+            return false;
         }
     }
 }
@@ -77,7 +80,7 @@ function CheckName(){
 
 
 function addBookmark(){
-    if(checkUrl()==true && CheckName()==true && DuplicateUrl()!=true){
+    if(checkUrl()==true && CheckName()==true && DuplicateUrl()==false){
         var site={
             name:siteName.value,
             url:siteUrl.value
