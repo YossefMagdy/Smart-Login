@@ -19,7 +19,7 @@ header .container .welcome{
         width: 80%;
     }
 }
-}
+
 @media screen and (max-width:767px) and (min-width:500px){
     header .container .welcome{
         width: 80%;

@@ -18,15 +18,14 @@ function CheckInput(){
         var user;
   if(userlist.length>0){
     for(var i=0;i<userlist.length;i++){
-        if(userlist[i].Email.toLowerCase()==userEmail.value.toLowerCase() && userlist[i].pass.toLowerCase()==userPass.value.toLowerCase()){
+        if(userlist[i].Email.toLowerCase()==userEmail.value.toLowerCase() && userlist[i].pass==userPass.value){
             window.open("Home.html","_self")
             user=userlist[i].name;
-            localStorage.setItem("Username",JSON.stringify(user))
-            break;
+            localStorage.setItem("Username",JSON.stringify(user));
         }
         else{
             document.getElementById("Alert-empty").classList.replace("d-block","d-none");
-            document.getElementById("Alert-wrong").classList.replace("d-none","d-block");;
+            document.getElementById("Alert-wrong").classList.replace("d-none","d-block");
             continue;
         }
   }
