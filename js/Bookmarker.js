@@ -25,6 +25,8 @@ siteUrl.addEventListener("blur",checkUrl)
 siteUrl.addEventListener("keyup",function(){
     Alert_Url.classList.replace("d-flex","d-none")
     D_email.classList.replace("d-flex","d-none")
+    siteUrl.classList.remove("is-invalid")
+    siteUrl.classList.remove("is-valid")
 })
 function checkUrl(){
     if(UrlValid.test(siteUrl.value)==true){
@@ -45,10 +47,11 @@ siteUrl.addEventListener("blur",DuplicateUrl)
 
 
 function DuplicateUrl(){
-   var duplicate=false;
+    var duplicate=false;
     for(var i=0;i<bookmark.length;i++){
         if(bookmark[i].url.toLowerCase()==siteUrl.value.toLowerCase()){
             D_email.classList.replace("d-none","d-flex")
+            siteUrl.classList.add("is-invalid")
             duplicate=true;
         }
         else{
@@ -57,7 +60,7 @@ function DuplicateUrl(){
     }
     return duplicate;
 }
-
+ console.log()
 
 // Name Validation
 siteName.addEventListener("blur",CheckName)
