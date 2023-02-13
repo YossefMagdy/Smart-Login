@@ -7,7 +7,7 @@ var D_email=document.getElementById("D_email");
 var bookmark;
 
 // validation
-var UrlValid=/^(https:\/\/www\.[a-zA-Z0-9]{4,15}\.[a-zA-Z]{2,5}\.?[a-z]?[a-z]?[a-z]?\/?)+([a-z]{3,10}\/?)?/;
+var UrlValid=/^((https|HTTPS):\/\/(www|WWW)\.[a-zA-Z0-9]{4,15}\.[a-zA-Z]{2,5}\.?[a-z]?[a-z]?[a-z]?\/?)+([a-z]{3,10}\/?)?$/;
 var namevalid=/^[a-zA-Z0-9]{3,10}$/;
 
 
